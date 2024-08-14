@@ -1,78 +1,54 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 		<title>Incremental Capital LLC</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="icon" type="image/x-icon" href="incrementalcapital-icon.ico">
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<meta name="description" content="Incremental Capital LLC">
+		<meta property="og:title" content="Incremental Capital LLC">
+		<meta property="og:description" content="Incremental Capital LLC is a proprietary trading operation/vehicle that invests for the benefit of its owner.">
+		<meta property="og:image" content="https://www.incremental.capital/images/og-image.jpg">
+		<meta property="og:url" content="https://www.incremental.capital">
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
-			<header id="header">
-				<h1>Incremental Capital LLC</h1>
-				<p>There's nothing to see here. Incremental Capital LLC is a proprietary trading 
-					operation/vehicle that invests for the benefit of its owner. But if you want 
-					to discuss derivatives trading and monetary economics (and not for financial or 
-					investment advice) please reach <a href="mailto:info@incremental.capital">out</a> 
-					or signup for the <a href="https://incrementalcapital.substack.com/" target="_new">newsletter</a>.</p>
-			</header>
+		<header id="header">
+			<h1>Incremental Capital LLC</h1>
+			<p>There's nothing to see here. Incremental Capital LLC is a proprietary trading 
+				operation/vehicle that invests for the benefit of its owner. But if you want 
+				to discuss derivatives trading and monetary economics (and not for financial or 
+				investment advice) please <a href="#signup-form">reach out</a> 
+				or signup for the <a href="https://incrementalcapital.substack.com/" target="_blank" rel="noopener noreferrer">newsletter</a>.</p>
+		</header>
 
 		<!-- Main -->
-			<main>
-				<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
-				<script>
-				  /* paste this line in verbatim */
-				  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
-				  /* customize formbutton below*/     
-				  formbutton("create", {
-					action: "https://formspree.io/f/xyzgzdwp",
-					title: "Need help?",
-					fields: [
-					  { 
-						type: "email", 
-						label: "Email:", 
-						name: "email",
-						required: true,
-						placeholder: "your@email.com"
-					  },
-					  {
-						type: "textarea",
-						label: "Message:",
-						name: "message",
-						placeholder: "What's the matter?",
-					  },
-					  { type: "submit" }      
-					],
-					styles: {
-					  title: {
-						backgroundColor: "gray"
-					  },
-					  button: {
-						backgroundColor: "gray"
-					  }
-					}
-				  });
-				</script>
-			</main>
+		<main>
+			<form id="signup-form" action="https://formspree.io/f/xyzgzdwp" method="POST">
+				<input type="email" name="email" placeholder="Your email" required>
+				<input type="submit" value="Contact">
+			</form>
+		</main>
 
 		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="https://twitter.com/incrementery" target="_new" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="https://www.instagram.com/incrementalcapital/" target="_new" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="https://github.com/incrementalcapital" target="_new" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="https://www.youtube.com/@incrementalcapital" target="_new" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
-					<li><a href="mailto:info@incremental.capital" target="_new" class="icon fa-envelope"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Incremental Capital LLC.</li><li><a href="disclaimer.html">Disclaimer</a></li>
-				</ul>
-			</footer>
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="https://twitter.com/incrementery" target="_blank" rel="noopener noreferrer" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="https://www.instagram.com/incrementalcapital/" target="_blank" rel="noopener noreferrer" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="https://github.com/incrementalcapital" target="_blank" rel="noopener noreferrer" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				<li><a href="https://www.youtube.com/@incrementalcapital" target="_blank" rel="noopener noreferrer" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+				<li><a href="#signup-form" class="icon fa-envelope"><span class="label">Email</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; <span id="current-year">2024</span> Incremental Capital LLC.</li>
+				<li><a href="disclaimer.html">Disclaimer</a></li>
+			</ul>
+		</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/main.js"></script>
+		 <script src="assets/js/main.js" defer></script>
 
 	</body>
 </html>
